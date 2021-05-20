@@ -13,6 +13,7 @@ The main focus of this pipline is to create a one stop shop for analysis of in v
 - MATLAB 2016     
 - Parallel Computing Toolbox
 - Signal Processing Toolbox
+- CaImAn MATLAB
 
 Please download the full repository into your working MATLAB folder. You must also download the reposity of [CaImAn](https://github.com/flatironinstitute/CaImAn-MATLAB) for ROI extraction and motion correction of the image stack. You will need to add the [CaImAn](https://github.com/flatironinstitute/CaImAn-MATLAB) folder to the NNTCaPip MATLAB path.
 
@@ -20,7 +21,7 @@ Please download the full repository into your working MATLAB folder. You must al
 To run the program open the matlab (.m) file labeled _CONSOLE_. This file acts as a central engine for the entire pipeline (i.e all function calls are eventually mapped to this file). I recommend running the file section by section as the current build has both the single and batch processing in the same space -- to be fixed later. 
 
 ### Single vs Batch Analysis
-The current build of this pipeline comes with the options of single file or batch processing. To run either a single tiff stack or example video provided in the pipeline run the MATLAB section labeled _Caiman Single File Analysis_ followed by _Single File Analysis_. Both these section process the bulk of the data. Now you are ready to visualize all of it! To do this, run the section labeled _Plot all_. 
+The current build of this pipeline comes with the options of single file or batch processing. To run either a single tiff stack or example video provided in the pipeline run the MATLAB section labeled _Caiman Single File ROI Extraction_ followed by _Single File Analysis_. Both these section process the bulk of the data. Now you are ready to visualize all of it! To do this, run the section labeled _Plot all_. 
 
 ```matlab
 %% CaimAn Single Batch Analysis
